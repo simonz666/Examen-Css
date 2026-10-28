@@ -1,0 +1,245 @@
+/* components */
+
+.hero-banner-principal {
+  background-image: url('../img/hero/hero.jpg'); 
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  min-height: 600px; 
+  display: flex;
+  justify-content: center; 
+  padding: 3rem;
+  border-radius: var(--border-radius, 8px);
+  margin-bottom: 2rem; 
+}
+
+.product-card {
+  background-color: var(--white);
+  border-radius: var(--border-radius);
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 4px 12px var(--shadow-color);
+  
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative; 
+  
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.product-card img {
+  border-radius: calc(var(--border-radius) - 4px);
+  height: 180px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.product-card h4 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: var(--text-color);
+}
+
+.product-price {
+  font-weight: bold;
+  color: var(--primary-dark);
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+
+.btn-details {
+  display: inline-block;
+  background-color: transparent;
+  color: var(--primary-dark);
+  border: 2px solid var(--primary-dark);
+  padding: 0.5rem 1.2rem;
+  font-weight: 600;
+  border-radius: 20px;
+  transition: all var(--transition-fast);
+}
+
+
+
+/* Ocultar los inputs de radio técnicos */
+.hidden-radio {
+  display: none;
+}
+
+
+.filter-label {
+  display: block;
+  padding: 0.6rem 1rem;
+  margin-bottom: 0.4rem;
+  background-color: #f4f6f8;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.filter-label:hover {
+  background-color: #e0e0e0;
+}
+
+#cat-todos:checked ~ .filters-sidebar label[for="cat-todos"],
+#cat-cuidado:checked ~ .filters-sidebar label[for="cat-cuidado"],
+#cat-hogar:checked ~ .filters-sidebar label[for="cat-hogar"], 
+#cat-alimento:checked ~ .filters-sidebar label[for="cat-alimento"], 
+#cat-moda:checked ~ .filters-sidebar label[for="cat-moda"] {
+  background-color: var(--primary-dark);
+  color: var(--white);
+  font-weight: 600;
+}
+
+#cat-cuidado:checked ~ .catalog-section .products-grid .product-card:not(.item-cuidado) {
+  display: none;
+}
+
+#cat-hogar:checked ~ .catalog-section .products-grid .product-card:not(.item-hogar) {
+  display: none;
+}
+
+#cat-alimento:checked ~ .catalog-section .products-grid .product-card:not(.item-alimento) {
+  display: none;
+}
+
+#cat-moda:checked ~ .catalog-section .products-grid .product-card:not(.item-moda) {
+  display: none;
+}
+
+/* contacto*/
+/* Tarjeta principal */
+.contact-form-card {
+  background-color: #ffffff;
+  padding: 2.5rem;
+  border: 1px solid #e0e0e0;
+}
+
+/* components sobre nosostros*/
+.hero-banner {
+  background-image: url('../img/hero/hero-sobre-nosotros.jpg'); 
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  
+
+  min-height: 600px; 
+
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  padding: 3rem;
+  border-radius: var(--border-radius, 8px);
+  margin-bottom: 2rem; 
+}
+
+.hero-content,.hero-content h3 {
+
+  text-align: center;
+  max-width: 600px; 
+  color: var(--text-color); 
+  font-size: 3.5rem; 
+  margin-bottom: 5.5rem; 
+  font-weight: 700;
+}
+
+
+
+.contact-form-card h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #2c3e50;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #333333;
+}
+
+.form-input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #cccccc;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  box-sizing: border-box;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #2e7d32;
+  box-shadow: 0 0 0 3px rgba(46, 125, 50, 0.15);
+}
+
+.form-textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+.btn-submit {
+  background-color: var(--primary-color);
+  color: var(--white);
+  padding: 0.8rem;
+  border-radius: 6px;
+  border: none;
+}
+
+.info-card {
+  background-color: var(--white);
+  padding: 1.5rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px var(--shadow-color);
+}
+
+.info-card h3 {
+  font-size: 1.1rem;
+  color: #333333;
+  margin-bottom: 0.5rem;
+}
+
+.info-highlight {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--primary-dark);
+}
+.about-hero-card h2 {
+  font-size: 2.2rem;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+}
+
+.about-tagline {
+  font-size: 1.1rem;
+  color: #666666;
+  margin: 0;
+}
+
+
+.about-block {
+  background-color: #ffffff;
+  padding: 2rem;
+  border: 5px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+
+
+.about-text-content p {
+  line-height: 1.6;
+  color: #444444;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+.about-text-content p:last-child {
+  margin-bottom: 0;
+}

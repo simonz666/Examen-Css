@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoMarket - Productos</title>
+    <link rel="stylesheet" href="../Css/main.css">
+    <link rel="stylesheet" href="../Css/layout.css">
+    <link rel="stylesheet" href="../Css/components.css">
+    <link rel="stylesheet" href="../Css/animations.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="logo">
+            <h1>EcoMarket</h1>
+        </div>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="products.html" class="active">Productos</a></li>
+                <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="header-actions">
+
+    </header> 
+    <main class="main-content catalog-layout">
+        <input type="radio" id="cat-todos" name="categoria" checked class="hidden-radio">
+        <input type="radio" id="cat-cuidado" name="categoria" class="hidden-radio">
+        <input type="radio" id="cat-hogar" name="categoria" class="hidden-radio">
+        <input type="radio" id="cat-alimento" name="categoria" class="hidden-radio">
+        <input type="radio" id="cat-moda" name="categoria" class="hidden-radio">
+        
+        <aside class="filters-sidebar">
+            <h3>Filtrar por Categoría</h3>
+            
+            <div class="filter-group">
+                <label for="cat-todos" class="filter-label">Todos</label>
+                <label for="cat-cuidado" class="filter-label">Cuidado Personal</label>
+                <label for="cat-hogar" class="filter-label">Hogar y Cocina</label>
+                <label for="cat-alimento" class="filter-label">Alimentación</label>
+                <label for="cat-moda" class="filter-label">Moda</label>
+            </div>
+        </aside>
+
+        <section class="catalog-section">
+            <div class="catalog-top-bar">
+                <h2>Nuestro Catálogo</h2>
+            </div>
+            
+            <div class="products-grid">
+
+                <article class="product-card item-cuidado">
+                    <span class="stock-badge">En stock</span>
+                    <img src="../img/products/product1.jpg" alt="Cepillo de bambú">
+                    <h4>Pitillo de Bambú</h4>
+                    <p class="product-price">$15.000</p>
+                </article> 
+
+                <article class="product-card item-hogar">
+                    <span class="stock-badge">En stock</span>
+                    <img src="../img/products/product2.jpg" alt="Botella reutilizable">
+                    <h4>Botella Térmica Inoxidable</h4>
+                    <p class="product-price">$45.000</p>
+                </article> 
+
+                <article class="product-card item-alimento">
+                    <span class="stock-badge">En stock</span>
+                    <img src="../img/products/product3.png" alt="Café orgánico">
+                    <h4>Café Orgánico Local</h4>
+                    <p class="product-price">$67.000</p>
+                </article> 
+
+                <article class="product-card item-moda">
+                    <span class="stock-badge">En stock</span>
+                    <img src="../img/products/product4.png" alt="Camiseta">
+                    <h4>Camiseta de algodon</h4>
+                    <p class="product-price">$90.000</p>
+                </article> 
+
+                <article class="product-card item-hogar">
+                    <span class="stock-badge">En stock</span>
+                    <img src="../img/products/product5.png" alt="Bolsas reutilizables">
+                    <h4>Bosas de malla reutilizables</h4>
+                    <p class="product-price">$12.600</p>
+                </article> 
+
+                <article class="product-card item-hogar">
+                    <span class="stock-badge">En stock</span>
+                    <img src="../img/products/product6.png" alt="Esponja">
+                    <h4>Esponja de Cocina de Celulosa Vegetal</h4>
+                    <p class="product-price">$7.000</p>
+                </article> 
+
+                <article class="product-card item-alimento">
+                    <span class="stock-badge">En stock</span>
+                    <img src="../img/products/product7.png" alt="Miel">
+                    <h4>Miel Orgánica Artesanal</h4>
+                    <p class="product-price">$28.000</p>
+                </article> 
+
+                <article class="product-card item-cuidado">
+                    <span class="stock-badge">En stock</span>
+                    <img src="../img/products/product8.png" alt="Desodorante">
+                    <h4>Desodorante Natural en Barra</h4>
+                    <p class="product-price">$14.000</p>
+                </article> 
+
+                <article class="product-card item-moda">
+                    <span class="stock-badge">En stock</span>
+                    <img src="../img/products/product9.png" alt="gorra">
+                    <h4>Gorra de algodon</h4>
+                    <p class="product-price">$32.000</p>
+                </article> 
+
+            </div>
+
+            <nav class="pagination">
+                <a href="#" class="page-link">Anterior</a>
+                <a href="#" class="page-link">1</a>
+                <a href="#" class="page-link">2</a>
+                <a href="#" class="page-link">3</a>
+                <a href="#" class="page-link">Siguiente</a>
+            </nav>
+        </section>
+</main>
+
+</body>
+</html>
